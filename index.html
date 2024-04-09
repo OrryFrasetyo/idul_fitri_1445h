@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Selamat Idul Fitri 1445 H</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="particles-js">
+      <div class="text">
+        <h2>Selamat Hari Raya Idul Fitri 1445 H<br /><span>Minal'Aidin wal-Faizin</span></h2>
+      </div>
+      <div class="masjid"></div>
+    </section>
+
+    <!-- Elemen audio dengan kontrol -->
+    <audio id="backgroundMusic" src="musik.ogg" loop controls hidden></audio>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script>
+      var music = document.getElementById("backgroundMusic");
+      music.volume = 0.5;
+      function playMusic() {
+        music.play();
+      }
+      document.addEventListener("click", playMusic);
+    </script>
+  </body>
+</html>
